@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="za.co.trojanc.ups.gui.controller.UpsToolbarController">
+   <children>
+      <ToolBar AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <Button fx:id="btnInstances" mnemonicParsing="false" onAction="#onShowInstances" text="Instances" />
+            <Button fx:id="btnInformation" mnemonicParsing="false" onAction="#onShowInformation" text="Information" />
+            <Button fx:id="btnCommands" mnemonicParsing="false" onAction="#onShowCommands" text="Commands" />
+            <ComboBox fx:id="listUps" onAction="#onUpsChanged" prefWidth="150.0" promptText="UPS" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>
